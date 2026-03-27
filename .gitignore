@@ -1,0 +1,30 @@
+# Elixir
+_build/
+deps/
+*.beam
+*.plt
+erl_crash.dump
+.elixir_ls/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Mix
+mix.lock
+
+# Project specific
+data/results/*
+data/logs/*
+*.exe
+dist/
+build/
+
+# OS
+Thumbs.db
+.env
+.env.local
