@@ -29,6 +29,21 @@ defmodule EliStressTest.MixProject do
       # JSON handling
       {:jason, "~> 1.4"},
       
+      # Phoenix Framework
+      {:phoenix, "~> 1.7"},
+      {:phoenix_live_view, "~> 0.20"},
+      {:phoenix_html, "~> 4.0"},
+      {:phoenix_live_reload, "~> 1.4", only: :dev},
+      {:plug_cowboy, "~> 2.6"},
+      
+      # Frontend build tools
+      {:tailwind, "~> 0.2", runtime: Mix.env() == :dev},
+      {:esbuild, "~> 0.8", runtime: Mix.env() == :dev},
+      {:dart_sass, "~> 0.7", runtime: Mix.env() == :dev},
+      
+      # Charts and visualization
+      {:vega_lite, "~> 0.1"},
+      
       # Development dependencies
       {:ex_doc, "~> 0.30", only: :dev},
       {:credo, "~> 1.7", only: [:dev, :test]}
